@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 
 const Container = styled.div`
   height: 30px;
@@ -10,12 +11,13 @@ const Container = styled.div`
   justify-content: center;
   font-size: 14px;
   font-weight: 500;
+  ${mobile({ textAlign: "center" })}
 `
 
 const Announcement = () => {
   return (
     <Container>
-      hi
+      Xin chào các bạn đây là trang Web E_Commerce do TheTai clone được nha !!!
     </Container>
   )
 }
